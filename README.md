@@ -7,7 +7,7 @@ A new Flutter project.
 
 ## Getting Started
 
-<center>**Flutter E-Commerce App**</center>
+**Flutter E-Commerce App**
 
 **Overview**
 
@@ -36,4 +36,8 @@ Connect a device or start an emulator.
 Run flutter run to launch the application.
 Feedback and Contributions
 We welcome any feedback, suggestions, or contributions to improve the application. If you encounter any issues or have ideas for enhancements, please don't hesitate to open an issue or submit a pull request on GitHub.
+<<<<<<< HEAD
 >>>>>>> a78b477 (edit readme file)
+=======
+
+>>>>>>> 3c8dc97 (update readme)
