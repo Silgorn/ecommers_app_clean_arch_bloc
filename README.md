@@ -23,9 +23,9 @@ To run the application locally, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
-3. Run flutter pub get to install dependencies.
+3. Run **'flutter pub get'** to install dependencies.
 4. Connect a device or start an emulator.
-5. Run flutter run to launch the application.
+5. Run **'flutter run'** to launch the application.
 
 Feedback and Contributions
 We welcome any feedback, suggestions, or contributions to improve the application. If you encounter any issues or have ideas for enhancements, please don't hesitate to open an issue or submit a pull request on GitHub.
