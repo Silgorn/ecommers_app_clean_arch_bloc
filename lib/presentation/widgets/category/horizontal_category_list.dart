@@ -1,3 +1,4 @@
+import 'package:ecommers_app2/core/constants/sizes.dart';
 import 'package:ecommers_app2/core/platform/helper_functions.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -23,9 +24,16 @@ class HorizontalCategoryList extends StatelessWidget {
     final dark = HelperFunctions.isDarkMode(context);
     return Container(
       height: 100,
-      color: dark ? TColors.darkPrimary : TColors.lightPrimary,
+      decoration: BoxDecoration(
+        color: dark ? TColors.darkPrimary : TColors.lightPrimary,
+        borderRadius: const BorderRadius.only(
+          bottomLeft: Radius.circular(TSizes.borderRadiusLg),
+          bottomRight: Radius.circular(TSizes.borderRadiusLg),
+        ),
+      ),
+      // color: dark ? TColors.darkPrimary : TColors.lightPrimary,
       child: Padding(
-        padding: const EdgeInsets.only(top: 10.0),
+        padding: const EdgeInsets.only(top: TSizes.sm),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

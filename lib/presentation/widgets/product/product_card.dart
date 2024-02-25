@@ -25,15 +25,13 @@ class ProductCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final darkMode = HelperFunctions.isDarkMode(context);
     return Padding(
-      padding: const EdgeInsets.all(4.0),
+      padding: const EdgeInsets.all(2.0),
       child: GestureDetector(
         onTap: onTap,
         child: Card(
           elevation: 0,
-          //shadowColor: Colors.black,
           color: darkMode ? TColors.darkPrimary : TColors.lightPrimary,
           child: SizedBox(
-            //   width: 150,
             height: TSizes.productItemHeight,
             child: Padding(
               padding: const EdgeInsets.all(TSizes.sm),
