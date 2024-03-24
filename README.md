@@ -1,7 +1,7 @@
 
 <p align="center"><b style="font-size: larger;">Flutter E-Commerce App</b></p>
 
-<img src="assets/screenshots/screenshot_1.jpg" width="200" height="400">
+<img src="assets/screenshots/screenshot_1.jpg" width="250" height="350">
 
 **Overview**
 
