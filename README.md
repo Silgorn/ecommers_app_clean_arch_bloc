@@ -8,6 +8,13 @@
   <img src="assets/screenshots/screenshot_3.jpg">
 </p>
 
+<p align="center"><b style="font-size: medium;">Dark theme</b></p>
+<p align="center">
+  <img src="assets/screenshots/screenshot_5.jpg">
+  <img src="assets/screenshots/screenshot_6.jpg">
+  <img src="assets/screenshots/screenshot_4.jpg">
+</p>
+
 
 **Overview**
 
