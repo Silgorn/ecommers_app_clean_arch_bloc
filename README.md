@@ -2,7 +2,7 @@
 <p align="center"><b style="font-size: larger;">Flutter E-Commerce App</b></p>
 
 
-![alt text](https://raw.githubusercontent.com/assets/screenshots/screenshot_1.jpg)
+![alt text](assets/screenshots/screenshot_1.jpg)
 
 **Overview**
 
