@@ -1,6 +1,8 @@
 
 <p align="center"><b style="font-size: larger;">Flutter E-Commerce App</b></p>
 
+![Главный экран приложения](assets/screenshots/creenshot_1.jpg)
+
 **Overview**
 
 This application has been developed as a part of an educational project, aiming to demonstrate proficiency in modern app development practices. It serves as a showcase of key concepts and technologies utilized in building robust mobile applications.
