@@ -1,5 +1,5 @@
 
-<p align="center"><b style="font-size: xx-large;">Flutter E-Commerce App</b></p>
+<h2 align="center">Flutter E-Commerce App</h2>
 
 <p align="center"><b style="font-size: medium;">Light theme</b></p>
 <p align="center">
