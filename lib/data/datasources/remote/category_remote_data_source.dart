@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:ecommers_app2/core/error/exception.dart';
 import 'package:ecommers_app2/data/models/category/category_model.dart';
+import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 abstract class CategoryRemoteDataSource {
@@ -18,7 +19,7 @@ class CategoryRemoteDataSourceImpl implements CategoryRemoteDataSource {
       _getProductFromUrl('https://fakestoreapi.com/products/categories');
 
   Future<List<CategoryModel>> _getProductFromUrl(String url) async {
-    print(url);
+    debugPrint(url);
     final response = await client.get(
       Uri.parse(url),
       headers: {

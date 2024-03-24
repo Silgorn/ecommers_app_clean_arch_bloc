@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:ecommers_app2/core/error/exception.dart';
 import 'package:ecommers_app2/data/models/product/product_model.dart';
 import 'package:ecommers_app2/domain/usecases/products/get_all_products.dart';
+import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 abstract class ProductRemoteDataSource {
@@ -26,7 +27,7 @@ class ProductRemoteDataSourceImpl implements ProductRemoteDataSource {
   }
 
   Future<List<ProductModel>> _getProductsFromUrl(String url) async {
-    print(url);
+    debugPrint(url);
     final response = await client.get(
       Uri.parse(url),
       headers: {

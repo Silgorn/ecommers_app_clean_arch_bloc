@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:ecommers_app2/core/error/exception.dart';
 import 'package:ecommers_app2/data/models/category/category_model.dart';
+import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 abstract class CategoryLocalDataSource {
@@ -10,7 +11,7 @@ abstract class CategoryLocalDataSource {
   Future<void> categoryToCache(List<CategoryModel> persons);
 }
 
-const CACHED_CATEGORY_LIST = 'CACHED_CATEGORY_LIST';
+const cachedCategoryList = 'CACHED_CATEGORY_LIST';
 
 class CategoryLocalDataSourceImpl implements CategoryLocalDataSource {
   final SharedPreferences sharedPreferences;
@@ -20,7 +21,7 @@ class CategoryLocalDataSourceImpl implements CategoryLocalDataSource {
   @override
   Future<List<CategoryModel>> getCategoryFromCache() {
     final jsonCategoryList =
-        sharedPreferences.getStringList(CACHED_CATEGORY_LIST);
+        sharedPreferences.getStringList(cachedCategoryList);
 
     if (jsonCategoryList!.isNotEmpty) {
       return Future.value(jsonCategoryList
@@ -36,8 +37,8 @@ class CategoryLocalDataSourceImpl implements CategoryLocalDataSource {
     final List<String> jsonCategoryList =
         categories.map((category) => json.encode(category.toJson())).toList();
 
-    sharedPreferences.setStringList(CACHED_CATEGORY_LIST, jsonCategoryList);
-    print('Category to write Cache: ${jsonCategoryList.length}');
+    sharedPreferences.setStringList(cachedCategoryList, jsonCategoryList);
+    debugPrint('Category to write Cache: ${jsonCategoryList.length}');
     return Future.value(jsonCategoryList);
   }
 }

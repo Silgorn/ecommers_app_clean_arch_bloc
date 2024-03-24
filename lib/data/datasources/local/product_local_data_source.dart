@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:ecommers_app2/core/error/exception.dart';
 import 'package:ecommers_app2/data/models/product/product_model.dart';
+import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 abstract class ProductLocalDataSource {
@@ -9,7 +10,7 @@ abstract class ProductLocalDataSource {
   Future<void> productToCache(List<ProductModel> products);
 }
 
-const CACHED_PRODUCTS_LIST = 'CACHED_PRODUCTS_LIST';
+const cachedProductsList = 'CACHED_PRODUCTS_LIST';
 
 class ProductLocalDataSourceImpl implements ProductLocalDataSource {
   final SharedPreferences sharedPreferences;
@@ -18,8 +19,7 @@ class ProductLocalDataSourceImpl implements ProductLocalDataSource {
 
   @override
   Future<List<ProductModel>> getLastProductFromCache() {
-    final jsonProductList =
-        sharedPreferences.getStringList(CACHED_PRODUCTS_LIST);
+    final jsonProductList = sharedPreferences.getStringList(cachedProductsList);
 
     if (jsonProductList!.isNotEmpty) {
       return Future.value(jsonProductList
@@ -35,8 +35,8 @@ class ProductLocalDataSourceImpl implements ProductLocalDataSource {
     final List<String> jsonProductsList =
         products.map((product) => json.encode(product.toJson())).toList();
 
-    sharedPreferences.setStringList(CACHED_PRODUCTS_LIST, jsonProductsList);
-    print('Products to write Cache: ${jsonProductsList.length}');
+    sharedPreferences.setStringList(cachedProductsList, jsonProductsList);
+    debugPrint('Products to write Cache: ${jsonProductsList.length}');
     return Future.value(jsonProductsList);
   }
 }
