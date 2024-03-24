@@ -2,7 +2,7 @@
 <p align="center"><b style="font-size: larger;">Flutter E-Commerce App</b></p>
 
 
-![alt text](https://raw.githubusercontent.com/Silgorn/ecommers_app_clean_arch_bloc/4aa94c365bfafb861012c49073f29981ba569c59/screenshot_1.jpg)
+![alt text](https://raw.githubusercontent.com/Silgorn/ecommers_app_clean_arch_bloc/4aa94c365bfafb861012c49073f29981ba569c59/assets/screenshots/screenshot_1.jpg)
 
 **Overview**
 
