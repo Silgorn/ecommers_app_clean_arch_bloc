@@ -1,7 +1,7 @@
 
 <p align="center"><b style="font-size: larger;">Flutter E-Commerce App</b></p>
 
-![Главный экран приложения](assets/screenshots/creenshot_1.jpg)
+![Главный экран приложения](assets/screenshots/screenshot_1.jpg)
 
 **Overview**
 
